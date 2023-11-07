@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Citas Médicas</title>
+</head>
+<body>
+  <h1>Lista de Citas Médicas</h1>
+  <table>
+    <tr>
+      <th>Nombre del Doctor</th>
+      <th>Nombre del Paciente</th>
+      <th>Motivo de la Consulta</th>
+      <th>Fecha de la Consulta</th>
+      <th>Hora de la Consulta</th>
+    </tr>
+    {{#each citas}}
+      <tr>
+        <td>{{nombreDoctor}}</td>
+        <td>{{nombrePaciente}}</td>
+        <td>{{motivoConsulta}}</td>
+        <td>{{fechaConsulta}}</td>
+        <td>{{horaConsulta}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</body>
+</html>

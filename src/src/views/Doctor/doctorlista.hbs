@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Doctores</title>
+</head>
+<body>
+  <h1>Lista de Doctores</h1>
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Especialidad</th>
+      <th>Fecha de Inicio Laboral</th>
+      <th>Sueldo</th>
+      <th>Periodo de Pago</th>
+      <th>Turno Laboral</th>
+    </tr>
+    {{#each doctores}}
+      <tr>
+        <td>{{nombre}}</td>
+        <td>{{especialidad}}</td>
+        <td>{{fechaInicioLaboral}}</td>
+        <td>{{sueldo}}</td>
+        <td>{{periodoPago}}</td>
+        <td>{{turnoLaboral}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</body>
+</html>
